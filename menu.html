@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Rajdhani" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>X Restaurant</title>
+</head>
+
+<body>
+    <div id='page'>
+        <header>
+            <div id="containernav">
+                <img class="logo" src="imgs/poltrona-frau.png" alt="">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="menu.html">Menu</a> </li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="about.html">About</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main id="menu">
+            <div id="parallaxmenu">
+            </div>
+            <h1>Menu</h1>
+            <h2 onclick="menuclick(this)" class="notselectable btnmenu">Meals</h2>
+            <ul>
+                <div class="flex-menu">
+                    <li>
+                        <img src="imgs/chickenalex.jpg" alt="Chicken-Alexander">
+                        <h5>Chicken Alexander</h5>
+                        <p>Marinated chicken breast pieces with mushrooms and peppers in a rich white wine and sherry
+                            sauce.</p>
+                    </li>
+                    <li>
+                        <img src="imgs/tarragon.jpg" alt="Tarragon-&-Lemon-Chicken">
+                        <h5>Tarragon & Lemon Chicken</h5>
+                        <p>Tender chicken breast and soft leeks in a delicate cream and white wine sauce, with tarragon,
+                            lemon and a dash of mustard.</p>
+                    </li>
+                    <li>
+                        <img src="imgs//lasagnalforno.jpg" alt="Lasagne-Al-Forno">
+                        <h5>Lasagne Al Forno</h5>
+                        <p> A slow-cooked ragu of beef and pork layered between sheets of free range egg pasta, with
+                            béchamel sauce and a West Country Cheddar topping.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/meatballs.jpg" alt="Meatballs-in-a-Rustic-Tomato-Sauce">
+                        <h5>Meatballs in a Rustic Tomato Sauce</h5>
+                        <p> Hand-rolled balls of minced beef and pork, seasoned with red pesto, chilli and garlic,
+                            served in
+                            a rich tomato sauce.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/salsagecassarole.jpg" alt="Sausage-Casserole">
+                        <h5>Sausage Casserole</h5>
+                        <p> Sliced pork and leek sausages with new potatoes, bacon and leeks in an apple & mustard
+                            sauce.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/beefmadras.jpg" alt="Beef-Madras">
+                        <h5>Beef Madras</h5>
+                        <p>Tender beef in an intense Madras curry sauce made with garam masala, turmeric and coriander
+                            cooked slowly with sliced onions, ginger and ground almonds.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/beefbourguig.jpg" alt="Beef-Bourguignon">
+                        <h5>Beef Bourguignon</h5>
+                        <p>Slow-cooked top rump steak, smoked bacon, mushrooms and caramelised baby onions with plenty
+                            of
+                            Merlot wine.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/beefstroga.jpg" alt="Beef-Stroganoff">
+                        <h5>Beef Stroganoff</h5>
+                        <p> Pieces of silverside beef and roasted mushrooms in a creamy sherry, brandy and paprika
+                            sauce.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/vegetablelasagne.jpg" alt="Roasted-Vegetable-Lasagne">
+                        <h5>Roasted Vegetable Lasagne</h5>
+                        <p>Layers of roasted peppers, mushrooms, courgettes and spinach between Italian egg pasta with a
+                            light, crème fraiche and mascarpone sauce.
+                        </p>
+                    </li>
+                </div>
+            </ul>
+
+            <h2 onclick="menuclick(this)" class="notselectable btnmenu">Burguers</h2>
+            <ul>
+                <div class="flex-menu">
+                    <li>
+                        <img src="imgs/burguer1.jpg" alt="Chicken-Alexander">
+                        <h5>ALagoas Burguer </h5>
+                        <p>Hamburguer clássico de 160g grelhado com picles de pimenta, queijo prato, maionese sujinho e
+                            alface no pão de hamburguer</p>
+                    </li>
+                    <li>
+                        <img src="imgs/burguer2.jpg" alt="Tarragon-&-Lemon-Chicken">
+                        <h5>Italacomi Burguer</h5>
+                        <p>Hamburguer de salmão de 160g grelhado com cogumelo shitake, chapeados com molho shoyo e
+                            catupiry no pão de hamburguer</p>
+                    </li>
+                    <li>
+                        <img src="imgs/burguer3.jpg" alt="Lasagne-Al-Forno">
+                        <h5>Vlad burger</h5>
+                        <p> Hamburguer classico de 160g grelhado com lascas de cebola assada na brasa, maionese sujinho
+                            e queijo cheddar derretido no pão de hamburguer
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/burguer4.jpg" alt="Meatballs-in-a-Rustic-Tomato-Sauce">
+                        <h5>Sabará Burger</h5>
+                        <p> Hamburguer de calabresa de 160g grelhado com mussarela de búfala derretida, rúcula e tomate
+                            seco no pão de hamburguer
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/salsagecassarole.jpg" alt="Sausage-Casserole">
+                        <h5>Sausage Casserole</h5>
+                        <p> Sliced pork and leek sausages with new potatoes, bacon and leeks in an apple & mustard
+                            sauce.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/burguer5.jpg" alt="Beef-Madras">
+                        <h5>Avenida Europa</h5>
+                        <p>Hamburguer 100% Angus
+                        </p>
+                    </li>
+
+                </div>
+            </ul>
+            <h2 onclick="menuclick(this)" class="notselectable btnmenu">Pizzas</h2>
+            <ul>
+                <div class="flex-menu">
+                    <li>
+                        <img src="imgs/calabresa.jpg" alt="Chicken-Alexander">
+                        <h5>Calabresa</h5>
+                        <p>Mussarela e calabresa fatiada</p>
+                    </li>
+                    <li>
+                        <img src="imgs/canadense.jpg" alt="Tarragon-&-Lemon-Chicken">
+                        <h5> Canadense</h5>
+                        <p>Molho de tomate temperado, lombo canadense, cebolas, azeitonas e orégano.</p>
+                    </li>
+                    <li>
+                        <img src="imgs/napolitana.png" alt="Lasagne-Al-Forno">
+                        <h5>Napolitana</h5>
+                        <p> Molho de tomate temperado, mussarela, rodelas de tomate, parmesão, azeitonas e orégano.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/siciliana.jpg" alt="Meatballs-in-a-Rustic-Tomato-Sauce">
+                        <h5> Siciliana</h5>
+                        <p> Molho de tomate temperado, bacon, champignon, cebola, mussarela e orégano.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/caipira.jpg" alt="Sausage-Casserole">
+                        <h5>Caipira</h5>
+                        <p> Molho de tomate temperado, filé de frango desfiado temperado, milho verde, catupiry ,
+                            azeitonas e orégano.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/carneseca.jpg" alt="Beef-Madras">
+                        <h5>Carne Seca</h5>
+                        <p>Molho de tomate temperado, carne seca, cebola e catupiry.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/portuguesa.jpg" alt="Beef-Bourguignon">
+                        <h5>Portuguesa</h5>
+                        <p>Molho de tomate temperado, mussarela, presunto, palmito, ovos, ervilhas, cebolas, azeitonas e
+                            orégano.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/pizzarucula.jpg" alt="Beef-Stroganoff">
+                        <h5>Rúcula com tomate seco</h5>
+                        <p> Molho de tomate temperado, mussarela, rúcula crua e tomates secos e orégano.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/siciliana.jpg" alt="Roasted-Vegetable-Lasagne">
+                        <h5>Romana</h5>
+                        <p>Molho de tomate temperado, mussarela,fatias de tomate, filés de anchova, parmesão e orégano.
+                        </p>
+                    </li>
+                </div>
+            </ul>
+            <h2 onclick="menuclick(this)" class="notselectable btnmenu">Salads ans Mixes</h2>
+            <ul>
+                <div class="flex-menu">
+                    <li>
+                        <img src="imgs/chickenalex.jpg" alt="Chicken-Alexander">
+                        <h5>Chicken Alexander</h5>
+                        <p>Marinated chicken breast pieces with mushrooms and peppers in a rich white wine and sherry
+                            sauce.</p>
+                    </li>
+                    <li>
+                        <img src="imgs/tarragon.jpg" alt="Tarragon-&-Lemon-Chicken">
+                        <h5>Tarragon & Lemon Chicken</h5>
+                        <p>Tender chicken breast and soft leeks in a delicate cream and white wine sauce, with tarragon,
+                            lemon and a dash of mustard.</p>
+                    </li>
+                    <li>
+                        <img src="imgs//lasagnalforno.jpg" alt="Lasagne-Al-Forno">
+                        <h5>Lasagne Al Forno</h5>
+                        <p> A slow-cooked ragu of beef and pork layered between sheets of free range egg pasta, with
+                            béchamel sauce and a West Country Cheddar topping.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/meatballs.jpg" alt="Meatballs-in-a-Rustic-Tomato-Sauce">
+                        <h5>Meatballs in a Rustic Tomato Sauce</h5>
+                        <p> Hand-rolled balls of minced beef and pork, seasoned with red pesto, chilli and garlic,
+                            served in
+                            a rich tomato sauce.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/salsagecassarole.jpg" alt="Sausage-Casserole">
+                        <h5>Sausage Casserole</h5>
+                        <p> Sliced pork and leek sausages with new potatoes, bacon and leeks in an apple & mustard
+                            sauce.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/beefmadras.jpg" alt="Beef-Madras">
+                        <h5>Beef Madras</h5>
+                        <p>Tender beef in an intense Madras curry sauce made with garam masala, turmeric and coriander
+                            cooked slowly with sliced onions, ginger and ground almonds.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/beefbourguig.jpg" alt="Beef-Bourguignon">
+                        <h5>Beef Bourguignon</h5>
+                        <p>Slow-cooked top rump steak, smoked bacon, mushrooms and caramelised baby onions with plenty
+                            of
+                            Merlot wine.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/beefstroga.jpg" alt="Beef-Stroganoff">
+                        <h5>Beef Stroganoff</h5>
+                        <p> Pieces of silverside beef and roasted mushrooms in a creamy sherry, brandy and paprika
+                            sauce.
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imgs/vegetablelasagne.jpg" alt="Roasted-Vegetable-Lasagne">
+                        <h5>Roasted Vegetable Lasagne</h5>
+                        <p>Layers of roasted peppers, mushrooms, courgettes and spinach between Italian egg pasta with a
+                            light, crème fraiche and mascarpone sauce.
+                        </p>
+                    </li>
+                </div>
+            </ul>
+        </main>
+    </div>
+    <footer>
+        <div id="icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-google"></i></a>
+        </div>
+        <h4>Tel: +55 13 33434335 / +55 13 996488899</h4>
+        <h4>234, 5th Avenue, New York</h4>
+    </footer>
+    </div>
+</body>
+
+<script src="javascript.js"></script>
+
+</html>

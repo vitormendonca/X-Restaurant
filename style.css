@@ -1,0 +1,363 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.notselectable{
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+      -moz-user-select: none; /* Firefox */
+       -ms-user-select: none; /* Internet Explorer/Edge */
+           user-select: none;
+}
+/* Home */ 
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+#page{
+    width: 100%;
+    overflow: hidden;
+}
+#sections p{
+
+    text-indent: 50px;
+    letter-spacing: .1em;
+line-height: 1.2em;
+}
+
+nav{
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid black;
+}
+nav ul{
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around
+}
+#containernav{  
+    margin: 15px 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+
+}
+
+ul li a:hover{
+    color:darkgoldenrod;
+}
+#containerslider{
+    width: 600px;
+    margin: auto;
+    border-bottom:5px solid rgba(255, 251, 0, 0.6);
+    border-top:5px solid rgba(255, 251, 0, 0.6);
+}
+@keyframes example{
+    0%{transform:translateX(0px)}
+    20%{transform:translateX(-600px)}
+    40% {transform:translateX(-1200px)}
+    60% {transform:translateX(-1800px)}
+    80% {transform:translateX(-2400px)}
+    100%{transform:translateX(0px)}
+}
+
+#containerimgs{
+    display: flex;
+    flex-flow: row nowrap;
+    animation-name: example;
+    animation-delay: 0.5s;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    z-index: -1;
+}
+#btnbook{
+    position: absolute;
+    left: 50%;
+    top: 450px;
+    padding: 8px 30px;
+    font-size: 16px;
+    z-index:3;
+    background-color: white; 
+    border: none;
+    border-radius: 5px;
+}
+
+.imgnav{
+    border: 1.5px solid black;
+    width: 600px;
+    height: 400px;
+}
+
+#sections{
+    width:100%;
+    height:500px;
+}
+#sections2{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;  
+    justify-content: space-evenly;
+
+}
+#sec1,#sec2{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+   align-items: center;
+   width:400px;
+ margin-top: 50px;
+   
+}
+#sec1 h2, #sec2 h2{
+    display: flex;
+    
+}
+.logo{
+    margin-left: 15px;
+    border:none;
+    height: 70px;
+    width: 150px;
+}
+
+
+#overlay{
+    padding: 0;
+    margin: 0;  
+    width: 100%;
+  background-color:"";
+  z-index :"";
+
+}
+/*Footer*/ 
+footer{
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    width: 100%;
+    height: 220px;
+    padding-top: 5px;
+    background-color:rgb(44, 44, 44);
+    justify-items: center;
+   
+}
+
+#icons{
+  margin:auto;
+}
+
+i{
+    margin:0 80px;
+    font-size: 30px;
+}
+
+h4{
+
+    font-size: 17px;
+text-align: center;
+}
+
+
+i.fab.fa-facebook:hover{
+    color: rgb(50, 56, 156)
+}
+i.fab.fa-instagram:hover{
+    color: rgb(153, 51, 51);
+}
+i.fab.fa-google:hover{
+    color: white;
+}
+
+
+/*Reservation */
+label{
+    font-size: 16px;
+}
+.inputnames{
+    width: 250px;
+}
+form input{
+    height: 30px;
+}
+#hourinput{
+    width: 70px;
+}
+#guests{
+  
+    width:40px
+}
+
+form{
+    background:#efeeeb  ;
+  height:550px;
+    
+}
+
+form ul{
+    margin: 0;
+    padding: 0;
+    height:550px;
+}
+#reservimg{
+    width:100%;
+}
+#grid-container{
+    display: grid;
+    align-content: center;
+    width: 50%;
+    height: 100%;
+    margin:auto;
+
+
+}
+#grid{
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+    justify-items: center;
+    text-align:center;
+}
+
+#grid:nth-child(1){
+    align-items: middle;
+}
+#parallaxreservation{
+    background-image: url("imgs/SBI-Loan-for-Restaurants.jpg") ;
+    height: 420px;
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.titleparallax{
+    position: absolute;
+    left: 50%;
+}
+    #submitinput{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 120px;
+    color: rgb(26, 25, 25);
+    background-color: rgb(243, 203, 23);
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+/*Menu*/
+
+#aboutrest {
+    background-image: url("imgs/cooking-up-change-how-chefs-are-making-a-difference-in-our-food.jpg") ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}   
+
+#about section{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 420px;
+}
+.sectionbacktext{
+    margin-left: 50px;
+    background-color: rgba(0,0,0,0.8);
+    width: 40%;
+    height:90%;
+display: flex;
+flex-flow: column nowrap;
+}
+#about p,#aboutamb p{
+    color:white;
+   margin:20px;
+ text-indent: 50px;
+ font-size: 18px;
+ letter-spacing: .1em;
+line-height: 1.2em;
+}
+#about h1,#aboutamb h1{
+    color:white;
+    font-size: 24px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+   text-align: center;
+}
+
+#aboutamb{
+    background-image: url("imgs/dining_out.jpg") ;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-end; 
+   
+
+}
+#aboutamb .sectionbacktext{
+    margin-right: 50px;
+}
+/*MENU*/
+#menu ul{
+   display: none; 
+}
+.flex-menu img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+.flex-menu{
+    display: grid;
+    grid-template-rows: repeat(3, 1r);
+    grid-template-columns: repeat(3, 1fr);
+}
+.flex-menu li{
+    display: grid;
+    justify-items: center;
+    border-bottom: 1px solid black;
+    margin-bottom:30px;
+    
+}
+.flex-menu p {
+   width:70% ;
+   text-align: center;
+}
+.btnmenu {
+    width: 80%;
+    margin: auto;
+ text-align: center;
+ background-color: rgb(248, 156, 43);
+ border-radius: 10px;
+ padding: 10px;
+ margin-bottom: 70px;
+ margin-top: 15px;
+
+}
+.btnmenu:hover{
+    background-color: rgb(253, 179, 89); ;
+    cursor: pointer;
+}
+.btnmenu:active{
+   width: 75%;
+}
+#menu h1{
+    font-family: 'Quicksand';
+    text-align: center;
+    margin-bottom: 80px;
+}

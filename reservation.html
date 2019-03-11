@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Rajdhani" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>X Restaurant</title>
+</head>
+
+<body>
+    <div id='page'>
+        <header>
+            <div id="containernav">
+                <img class="logo" src="imgs/poltrona-frau.png" alt="">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="menu.html">Menu</a> </li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="about.html">About</a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div id="parallaxreservation">
+            </div>
+            <form action='https://formspree.io/your@email.com' method="POST">
+                <ul>
+                    <div id="grid-container">
+                        <div id="grid">
+                            <li id="">
+                                <p><label for="submitreservation">Name</label></p>
+                                <p><input onkeypress="inputvali(this)" class="inputnames" required type="text"
+                                        name="name" placeholder="name example"></p>
+                            </li>
+                            <li>
+                                <p><label for="submitreservation">Last Name</label></p>
+                                <p><input onkeypress="inputvali(this)" class="inputnames" required type="text"
+                                        name="lastname" placeholder="name example">
+                                </p>
+                            </li>
+                            <li>
+                                <p><label for="email">E-mail :</label></p>
+                                <p><input required class="inputnames" type="email" name="email"
+                                        placeholder="example@gmail.com">
+                                </p>
+                            </li>
+                            <li>
+                                <p><label for="cellphone">Phone Number</label></p>
+                                <p><input type="tel" name="phone" required pattern="[0-9]{11}"
+                                        placeholder="Ex:13991234567">
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <label for="numpeople">Number of people</label>
+                                </p>
+                                <p>
+                                    <input required id="guests" type="number" name="numpeople" value="1" min="1"
+                                        max="30">
+                                </p>
+                            </li>
+                            <li>
+                                <p><label for="datereservation">Date of reservation</label></p>
+                                <p><input required type="date" name="datereservation"></p>
+                            </li>
+                            <li>
+                                <p> <label for="timereservation">Hour</label></p>
+                                <p><input id="hourinput" required type="time" name="timereservation"><select>
+                                        <option value="am">am</option>
+                                        <option value="pm">pm</option>
+                                    </select></p>
+
+                            </li>
+                            <li>
+                                <p><input onclick="subform()" id="submitinput" required type="submit"
+                                        name="submitreservation" value="Submit">
+                                </p>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </form>
+        </main>
+        <footer>
+            <div id="icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+            </div>
+            <h4>Tel: +55 13 33434335 / +55 13 996488899</h4>
+            <h4>234, 5th Avenue, New York</h4>
+        </footer>
+    </div>
+</body>
+
+<script src="javascript.js"></script>
+
+</html>
